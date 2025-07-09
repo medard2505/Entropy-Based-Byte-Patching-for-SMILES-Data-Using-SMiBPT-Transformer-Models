@@ -88,6 +88,8 @@ python train_pretrain.py --config config.yaml
 
 This pretrains SMiBPT on untruncated SMILES/DeepSMILES using entropy-aware masking and byte patching. By default, it logs loss, accuracy, and entropy dynamics per epoch.
 
+If you would like to request access to the pre-training dataset, please contact us: `medardedmund25@chungbuk.ac.kr`
+
 ---
 
 ## 🧪 Fine-Tuning on Downstream Tasks
