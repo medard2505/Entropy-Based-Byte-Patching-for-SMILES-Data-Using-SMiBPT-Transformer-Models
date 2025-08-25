@@ -1,9 +1,5 @@
 # SMiBPT: Entropy-Aware Byte Patching Transformer for Molecular Representation Learning
 
----
-
-````markdown
-# SMiBPT: SMILES Byte-Patch Transformer
 A novel entropy-aware Transformer-based architecture for molecular representation learning. SMiBPT introduces **dynamic byte-level patching**, **chemical motif awareness**, and **adaptive masked language modeling** to effectively capture semantically rich substructures in both SMILES and DeepSMILES molecular encodings.
 
 ---
