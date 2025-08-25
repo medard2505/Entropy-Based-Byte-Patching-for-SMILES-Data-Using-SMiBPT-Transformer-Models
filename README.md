@@ -30,8 +30,6 @@ A novel entropy-aware Transformer-based architecture for molecular representatio
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/SMiBPT.git
-cd SMiBPT
 pip install -r requirements.txt
 ````
 
