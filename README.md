@@ -44,63 +44,11 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 Project Structure
 
-```
-SMiBPT/
-│
-├── model/                   # Transformer and embedding architecture
-│   ├── smibpt_model.py      # SMILESMLMTransformer definition
-│   ├── patch_embedding.py   # DynamicBytePatchEmbedding
-│   ├── rope.py              # Rotary Positional Embedding (RoPE)
-│
-├── utils/                  
-│   ├── entropy.py           # Entropy computation functions
-│   ├── motifs.py            # Aromatic, charged, metal motif detection
-│   ├── masking.py           # Adaptive MLM masking functions
-│   ├── evaluation.py        # AUC, F1, RMSE, R² calculations
-│
-├── data/                    # SMILES datasets and MoleculeNet benchmarks
-│   ├── smiles_dataset.py    # Dataset class with adaptive byte patching
-│   ├── collate_fn.py
-│
-├── train_pretrain.py        # Main script for MLM pretraining
-├── train_finetune.py        # Fine-tuning for classification/regression
-├── cross_validate.py        # 10-fold CV pipeline for downstream tasks
-├── config.yaml              # Editable training settings
-├── README.md
-└── requirements.txt
-```
+## 📚 Datasets
 
----
-
-## 🔁 Pretraining
-
-```bash
-python train_pretrain.py --config config.yaml
-```
-
-This pretrains SMiBPT on untruncated SMILES/DeepSMILES using entropy-aware masking and byte patching. By default, it logs loss, accuracy, and entropy dynamics per epoch.
 
 If you would like to request access to the pre-training dataset, please contact us: `medardedmund25@chungbuk.ac.kr`
-
----
-
-## 🧪 Fine-Tuning on Downstream Tasks
-
-To fine-tune on BBBP (classification):
-
-```bash
-python train_finetune.py --task BBBP --mode classification --folds 10
-```
-
-To fine-tune on ESOL (regression):
-
-```bash
-python train_finetune.py --task ESOL --mode regression --folds 10
-```
-
-Supports MoleculeNet tasks: `BBBP`, `ESOL`, `Lipophilicity`, `Tox21`, etc.
 
 ---
 
