@@ -1,0 +1,7 @@
+transformers==4.46.3
+deepchem==2.8.0
+deepsmiles
+sentencepiece
+Matplotlib==3.10.0
+Seaborn==0.13.2
+rdkit==2025.3.5
