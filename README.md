@@ -33,14 +33,10 @@ A novel entropy-aware Transformer-based architecture for molecular representatio
 pip install -r requirements.txt
 ````
 
-**Requirements include**:
+**We recommand**:
 
 * Python ≥ 3.8
 * PyTorch ≥ 1.11
-* RDKit
-* scikit-learn
-* tqdm
-* transformers (optional for comparison)
 
 ---
 
