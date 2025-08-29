@@ -74,7 +74,12 @@ Download pretrained SMiBPT weights:
 * `best_model.pth`: Pretrained on \~216M molecules with entropy-aware patching and RoPE
 
 ```python
-model.load_state_dict(torch.load("best_model.pth"))
+m_path = "best_model_100M.pth"
+
+model = SMILESMLMTransformer(embedding_dim=192, dim_feedforward=1024)  
+#model = torch.nn.DataParallel(model)
+
+model.load_state_dict(torch.load(m_path))
 ```
 
 ---
