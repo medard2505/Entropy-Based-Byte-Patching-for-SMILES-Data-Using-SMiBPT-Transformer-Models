@@ -52,7 +52,7 @@ If you would like to request access to the pre-training dataset, please contact 
 
 ```python
 from masking import mask_byte_patches_adaptive
-masked_patches, labels = mask_byte_patches_adaptive(byte_patches, entropy_vals)
+masked_patches, labels = mask_byte_patches(byte_patches, entropy_vals)
 ```
 
 High-entropy regions (e.g., heterocycles, aromatic rings) are masked more often to improve contextual learning.
